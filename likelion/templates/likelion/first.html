@@ -1,0 +1,340 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Smart Korea | 빌딩스마트협회</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/utilities.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script type="text/javascript" src="{% static 'js/first.js' %}"></script>
+    <script src="https://kit.fontawesome.com/9b342ce525.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="home">
+    <!-- Navbar -->
+    <header class="hero">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <a href="{% url 'first' %}"><span class="logoColor" > Building</span
+          >Smart</a>
+        </h1>
+        <nav>
+          <ul>            
+            <li><a href="{% url 'blog' %}">공지사항</a></li>
+            <li><a href="#about">협회안내</a></li>
+            <li><a href="#cases">뉴스&이벤트</a></li>
+            <li><a href="#blog">자료실</a></li>
+            <li><a href="#member">멤버쉽</a></li>
+            <li><a href="#contact">연락</a></li>
+            <li><a href="{% url 'login' %}" class="navbtn">회원가입</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>About building SMART Korea</h1>
+        <p>
+          사단법인 빌딩스마트협회는 2008년 4월 25일 창립총회를 통하여
+          출범되었습니다. 협회는 한국 건설실무분야에서 BIM 및 첨단건설IT의 연구,
+          보급 및 적용을 촉진하기 위한 민간업계 대표기관으로서 건설산업에서의
+          응용과 각종 정책건의 등의 활동을 통하여 국내활성화를 도모하고, 관련
+          국제활동에 참여 및 공헌을 통하여 국제 건설산업의 발전과 공공복리향상에
+          기여함을 그 목적으로 설립되었습니다.
+        </p>
+        <a href="#about" class="btn" onclick="not_develop()"
+          ><i class="fas fa-chevron-right"></i> 더 알아보기</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- About: Icons -->
+      <section id="about" class="icons bg-light">
+        <div class="flex-items">
+          <div>
+            <i class="fas fa-book fa-2x"></i>
+            <div>
+              <h3>우리가 누구인가</h3>
+              <p>
+                사단법인 빌딩스마트협회는 2008년 4월 25일 출범 후, 
+                한국 건설실무분야에서 민간업계 대표기관으로서 
+                건설산업에서의 응용과 각종 정책건의 등의 활동으로 
+                국제 건설산업의 발전과 공공복리 향상에 기여하고 있습니다.
+                
+              </p>
+            </div>
+          </div>
+          <div>
+            <i class="fas fa-laptop fa-2x"></i>
+            <div>
+              <h3>무엇을 하는가</h3>
+              <p>
+                buildingSMART는 Chapter와 회원으로 구성되어 있습니다.
+                Chapter: 특정 국가 내에서 openBIM의 구현에 대해 관심이 있는 해당 국가의 회원들이 모인 단체입니다. 
+                buildingSMART International 본부 회원들에 의해 주도되며,전 세계 총 18개의 Chapter가 있습니다.
+              </p>
+            </div>
+          </div>
+          <div>
+            <i class="far fa-heart fa-2x"></i>
+            <div>
+              <h3>비전</h3>
+              <p>
+                buildingSMART는 Standards, Compliance 및 Chapter로 구성된 세가지 핵심 프로그램으로 구성됩니다. 
+                건축 환경 전반에 걸친 소유자, 운영자, 설계, 엔지니어링, 건설(AEC) 및 시설 관리(FM) 산업에 의한 BIM의 폭넓은 활용을 지원하기 위해서
+                개발하고 활성화되고 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About: Solutions -->
+      <section class="solutions flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="{% static 'images/home/people.jpg' %}" alt="" />   
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-primary">
+                <h4>빌딩스마트협회 코리아</h4>
+                <h2>설립배경</h2>
+                <p>
+                  BIM에 관한 기술적 보급이나 국내활동은 1998년 IAI Korea의
+                  출범으로 거슬러 올라갑니다. 국제적 표준개발 단체인 IAI(현
+                  buildingSMART)에서 다양한 활동을 해왔고 국내에서도 가입하여
+                  참여해 왔으나 표준의 확산, IT성능, 건설 실무계의 관심, 건축주나
+                  정부정책 등 BIM이 활성화되기 위한 요건들이 충분히 뒷받침되지
+                  못하여 그 동안 크게 관심을 받지 못하였습니다. 그러나 최근 수년간
+                  BIM에 대한 요구가 건축계내부 뿐아니라 외부로부터 점차 증가해
+                  왔고 국제 IAI는 이에 효과적으로 대응하기 위해서
+                  buildingSMART라는 브랜드로 실무계에 대한 요구대응 태세를
+                  정비하였으며 국내 IAI Korea도 이에 발맞추어 buildingSMART
+                  Korea명의로 활동을 시작하였습니다. 그러나 오늘날 BIM이 단순히
+                  몇몇 건축분야의 전문조직만으로는 건설 패러다임의 변화에
+                  효과적으로 대응하기 어렵다고 판단하여 보다 광범위한 기관과
+                  조직의 참여에 의한 빌딩스마트협회를 출범하였습니다.
+                </p>
+              <a href="#" class="btn btn-outline" onclick="not_develop()">
+                <i class="fas fa-chevron"></i>Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cases -->
+      <secion id="cases" class="cases flex-grid section-padding">
+        <header class="section-header">
+          <h5>갤러리</h5>
+          <h2>행사사진</h2>
+          <p>빌딩스마트코리아 행사사진 갤러리 입니다.</p>
+        </header>
+        <div class="row">
+          <div class="column">
+            <a
+              href="{% static 'images/cases/cases1.jpg' %}"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, esse."
+            >
+              <img src="{% static 'images/cases/cases1.jpg' %}" alt="" />    
+            </a>
+            <a
+              href="{% static 'images/cases/cases2.jpg' %}"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, esse."
+            >
+              <img src="{% static 'images/cases/cases2.jpg' %}" alt="" />
+            </a>
+          </div>
+          <div class="column">
+            <a
+              href="{% static 'images/cases/cases3.jpg' %}"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, esse."
+            >
+              <img src="{% static 'images/cases/cases3.jpg' %}" alt="" />
+            </a>
+            <a
+              href="{% static 'images/cases/cases4.jpg' %}"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, esse."
+            >
+              <img src="{% static 'images/cases/cases4.jpg' %}" alt="" />
+            </a>
+          </div>
+          <div class="column">
+            <a
+              href="{% static 'images/cases/cases5.jpg' %}"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, esse."
+            >
+              <img src="{% static 'images/cases/cases5.jpg' %}" alt="" />
+            </a>
+            <a
+              href="{% static 'images/cases/cases6.jpg' %}"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, esse."
+            >
+              <img src="{% static 'images/cases/cases6.jpg' %}" alt="" />
+            </a>
+          </div>
+          <div class="column">
+            <a
+              href="{% static 'images/cases/cases7.jpg' %}"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, esse."
+            >
+              <img src="{% static 'images/cases/cases7.jpg' %}" alt="" />
+            </a>
+            <a
+              href="{% static 'images/cases/cases8.jpg' %}"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, esse."
+            >
+              <img src="{% static 'images/cases/cases8.jpg' %}" alt="" />
+            </a>
+          </div>
+        </div>
+      </secion>
+
+      <!-- Blog -->
+      <section id="blog" class="blog flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="{% static 'images/home/blog.jpg' %}" alt="" />   
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-secondary">
+                <h4>June 25 2020</h4>
+                <h2>공지사항</h2>
+                <p>
+                  (사)빌딩스마트협회, 토목‧건축분야 ‘BIM 용역 실적등록’
+                  7월31일까지 연장 접수
+                </p>
+                <a href="{% url 'blog' %}" class="btn btn-outline" >
+                  <i class="fas fa-chevron"></i>더 알아보기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <secion id="member" class="team section-padding">
+        <header class="section-header">
+            <h5>파트너</h5>
+            <h2>회원사 리스트</h2>
+            <p>빌딩스마트코리아는 이외 다수의 파트너사가 있습니다.</p>
+            <p><img src="{% static 'images/home/member.jpg' %}" alt="our member" /></p>
+          </header>
+          <div class="flex-items"></div>
+      </secion>
+
+           <!-- Contact -->
+           <section id="contact" class="contact flex-columns">
+            <div class="row">
+              <div class="column">
+                <div class="column-1">
+                  <img src="{% static 'images/home/contact.jpg' %}" alt="" />
+                </div>
+              </div>
+              <div class="column">
+                <div class="column-2 bg-light">
+                  <h2>문의사항</h2>
+                  <form action="process.php" class="callback-form" method="POST">
+                    <div class="form-control">
+                      <label for="name"></label>
+                      <input type="text" name="name" id="name" placeholder="이름" />
+                    </div>
+                    <div class="form-control">
+                      <label for="email"></label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="이메일 주소"
+                      />
+                    </div>
+                    <div class="form-control">
+                      <label for="phone"></label>
+                      <input
+                        type="text"
+                        name="phone"
+                        id="phone"
+                        placeholder="연락처"
+                      />
+                    </div>
+                    <input type="submit" value="제출" id="submit" class="btn" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark">
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 | 빌딩스마트코리아 | All Rights Reserved</p>
+      </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static 'js/lightbox.min.js' %}"></script>   
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+
+      //Smooth Scrolling
+      $('#navbar a, .btn').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $('html,body').animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });      
+          function not_develop(){
+             alert("아직 개발중입니다.")
+                }  
+    </script>
+  </body>
+</html>
