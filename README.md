@@ -9,7 +9,7 @@ https://buildingsmart.or.kr/default.aspx
 
 구성 인원 : 4명 
 소요 시간 : 6시간
-역할
-프론트 : 2
-백 : 1
-서포트 : 1
+역할  
+프론트 : 2  
+백 : 1  
+서포트 : 1  
